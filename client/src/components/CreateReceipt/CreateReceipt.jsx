@@ -8,7 +8,7 @@ import Camera from '../Camera/Camera';
 import Upload from '../Upload/Upload';
 import addIcon from '../assets/icons/addIcon2.png';
 import cameraIcon from '../assets/icons/cameraIcon.png'
-
+import { Link } from 'react-router-dom'
 
 function CreateReceipt() {
     const [receiptName, setReceiptName] = useState('');
@@ -73,18 +73,22 @@ function CreateReceipt() {
 
             <img className='camera__icon__align' src={cameraIcon} alt="camera image icon" width="300" height="240" />
 
-            <img className='add__receipt__icon__align' src={addIcon} alt="add image icon" width="30" height="24" />
+
+            <Link to="/CreateReceipt">
+                <img className='add__receipt__icon__align' src={addIcon} alt="add image icon" width="30" height="24" />
+            </Link>
+
 
             <form action="">
-                <label for="receiptName" onSubmit={handleFormSubmit}>Receipt Name:</label>
+                <label label="receiptName" onSubmit={handleFormSubmit}>Receipt Name:</label>
                 <input type="text" id="receiptName" name="receiptName" onChange={handleChange}></input>
-                <label for="receiptDate">Receipt Date:</label>
+                <label label="receiptDate">Receipt Date:</label>
                 <input type="date" id="receiptDate" name="receiptDate" onChange={handleChange}></input>
-                <label for="receiptAmount">Receipt Amount:</label>
+                <label label="receiptAmount">Receipt Amount:</label>
                 <input type="number" id="receiptAmount" name="receiptAmount" onChange={handleChange}></input>
-                <label for="receiptCategory">Receipt Category:</label>
+                <label label="receiptCategory">Receipt Category:</label>
                 <input type="text" id="receiptCategory" name="receiptCategory" onChange={handleChange}></input>
-                <label for="receiptNotes">Receipt Notes:</label>
+                <label label="receiptNotes">Receipt Notes:</label>
                 <textarea type="message" id="receiptNotes" name="receiptNotes" onChange={handleChange}></textarea>
                 <input type="submit" value="Submit"></input>
             </form>
