@@ -1,6 +1,5 @@
 import React, { useRef, useEffect, useState } from 'react';
 // import { v2 as cloudinary } from 'cloudinary';
-
 // cloudinary.config({
 //     cloud_name: 'dohtfj5zs',
 //     api_key: '588842527859546',

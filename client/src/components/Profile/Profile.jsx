@@ -8,6 +8,9 @@ function Profile() {
         <>
             <HeaderNav />
             <p>Profile Body</p>
+            <p>change email</p>
+            <p>change password</p>
+            <p>delete account</p>
             <FooterNav />
         </>
     );
