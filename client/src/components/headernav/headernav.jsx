@@ -2,9 +2,9 @@ import './headernav.css';
 import addIcon from '../assets/icons/addIcon2.png'; //@importing icon variable from icons path
 import personIcon from '../assets/icons/personIcon.png';
 
-import Container from 'react-bootstrap/Container';
+// import Container from 'react-bootstrap/Container';
 // import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
+// import Navbar from 'react-bootstrap/Navbar';
 function Headernav() {
     return (
         <>

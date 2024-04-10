@@ -1,7 +1,7 @@
 import './UploadReceipt.css';
 
 import headernav from '../headernav/headernav';
-import FooterNav from '../FooterNav/FooterNav';
+import footernav from '../footernav/footernav';
 
 const fileSelected = (e) => { //function will be called when the file is selected
     console.log(e.target.files[0]); // logs selected file

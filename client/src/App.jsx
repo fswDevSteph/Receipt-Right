@@ -13,6 +13,7 @@ function App() {
       <Headernav />
       <Camera />
       <Upload />
+      <Footernav />
     </>
   )
 }
