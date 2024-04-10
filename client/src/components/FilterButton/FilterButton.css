@@ -1,0 +1,30 @@
+.filter__button {
+    background-color: #f8f9fa;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    color: #495057;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-right: 0.5rem;
+    padding: 1 2rem;
+    transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+}
+
+.dropdown {
+    display: block;
+    /* Ensure dropdown elements stack vertically */
+    margin-top: 5px;
+    /* Add some spacing between dropdown elements */
+    flex-direction: column;
+    position: absolute;
+    width: 3%;
+}
+
+
+
+.dropdown button {
+    display: block;
+    /* Ensure dropdown items stack vertically */
+    margin-bottom: 5px;
+    /* Add some spacing between dropdown items */
+}

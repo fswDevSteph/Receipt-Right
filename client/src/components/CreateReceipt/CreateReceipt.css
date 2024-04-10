@@ -1,0 +1,30 @@
+.add__receipt__icon__align {
+    display: flex;
+    justify-content: center;
+    align-items: left;
+feature/whiteicons
+    margin-top: 3em;
+
+   
+
+ main
+}
+
+/* .camera__icon__align {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3em;
+} */
+
+feature/whiteicons
+
+ main
+form label,
+form input,
+form textarea {
+    align-items: flex-start;
+    text-align: left;
+    display: block;
+    margin-bottom: 10px;
+}
