@@ -53,7 +53,7 @@ function App() {
 
 
 
-
+        <HeaderNav />
         <LoginPage />
         <HomePage />
         <Dashboard />
