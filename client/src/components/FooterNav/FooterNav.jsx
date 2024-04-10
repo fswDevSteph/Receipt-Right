@@ -1,23 +1,26 @@
-import './HeaderNav.css';
+import './FooterNav.css';
 import addIcon from '../assets/icons/addIcon2.png'; //@importing icon variable from icons path
 import personIcon from '../assets/icons/personIcon.png';
-
+import dashboardIcon from '../assets/icons/dashboardIcon.png';
+import exportIcon from '../assets/icons/exportIcon.png';
+import settingsIcon from '../assets/icons/settingsIcon.png';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-function HeaderNav() {
+function FooterNav() {
     return (
         <>
             <Navbar expand="lg" className="bg-body-tertiary nav__border">
                 <Container>
                     <Navbar.Brand href="#home" >
-
+                        <div className='nav__bar__left'>
+                            <img className='' src={exportIcon} alt="export image icon" width="30" height="24" />
+                        </div>
                         <div className='nav__bar__right'>
-                            <img src={addIcon} alt="add image icon" width="30" height="24" />
-                            <img src={personIcon} alt="profile image icon" width="30" height="24" />
+                            <img src={settingsIcon} alt="export image icon" width="30" height="24" />
                         </div>
                         <div className='nav__bar__mid'>
-                            <h2 src={addIcon} alt="add image icon" width="30" height="24" >Receipt Master</h2>
+                            <img src={dashboardIcon} alt="dashboard image icon" width="30" height="24" />
                         </div>
                     </Navbar.Brand>
 
@@ -27,5 +30,5 @@ function HeaderNav() {
     );
 }
 
-export default HeaderNav;
+export default FooterNav;
 
