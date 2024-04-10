@@ -17,7 +17,7 @@ function HeaderNav() {
                             <img src={personIcon} alt="profile image icon" width="30" height="24" />
                         </div>
                         <div className='nav__bar__mid'>
-                            <h2 src={addIcon} alt="add image icon" width="30" height="24" >Receipt Master</h2>
+                            <h2 src={addIcon} alt="add image icon" width="30" height="24" >Receipt Right</h2>
                         </div>
                     </Navbar.Brand>
 

@@ -1,3 +1,8 @@
+h2 {
+    color: white;
+    text-shadow: 0 0 10px coral;
+}
+
 .nav__border {
     background-color: #3468D3;
     padding: 1em;
