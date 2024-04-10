@@ -5,6 +5,7 @@ import './CreateReceipt.css';
 import HeaderNav from '../HeaderNav/HeaderNav';
 import FooterNav from '../FooterNav/FooterNav';
 import Camera from '../Camera/Camera';
+import Upload from '../Upload/Upload';
 import addIcon from '../assets/icons/addIcon2.png';
 import cameraIcon from '../assets/icons/cameraIcon.png'
 
@@ -69,7 +70,7 @@ function CreateReceipt() {
 
             < Camera />
 
-            <p>Upload Receipt Image!</p>
+
             <img className='camera__icon__align' src={cameraIcon} alt="camera image icon" width="300" height="240" />
 
             <img className='add__receipt__icon__align' src={addIcon} alt="add image icon" width="30" height="24" />
@@ -87,6 +88,9 @@ function CreateReceipt() {
                 <textarea type="message" id="receiptNotes" name="receiptNotes" onChange={handleChange}></textarea>
                 <input type="submit" value="Submit"></input>
             </form>
+
+
+            < Upload />
 
             <FooterNav />
         </div>

@@ -13,6 +13,9 @@ function SettingsPage() {
 
             {/* Code here */}
             <p>SettingsPage Body</p>
+            <p>change email </p>
+            <p>change password</p>
+            <p>delete account</p>
 
             <FooterNav />
         </div>
