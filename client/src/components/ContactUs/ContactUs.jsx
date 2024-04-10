@@ -20,7 +20,7 @@ function ContactUs() {
             <h1>Contact Us</h1><br /><br /><br />
 
             <h2>Stephanie Perroni</h2>
-            <p><a href='https://github.com/fswDevSteph'>GitHub</a>      |       <a href='https://stephanie-perroni-colorful-portfolio.netlify.app/'>Portfolio</a></p>
+            <p><a href='https://github.com/fswDevSteph' target='_blank'>GitHub</a>      |       <a href='https://stephanie-perroni-colorful-portfolio.netlify.app/' target='_blank'  >Portfolio</a></p>
 
             <h2>Send us a message</h2>
             <form onSubmit={handleSubmit}>
