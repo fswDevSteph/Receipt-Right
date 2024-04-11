@@ -9,6 +9,7 @@ import Upload from '../Upload/Upload';
 import addIcon from '../assets/icons/addIcon2.png';
 import cameraIcon from '../assets/icons/cameraIcon.png'
 import { Link } from 'react-router-dom'
+import ViewAllReceipts from '../ViewAllReceipts/ViewAllReceipts';
 
 function CreateReceipt() {
     const [receiptName, setReceiptName] = useState('');
@@ -67,7 +68,7 @@ function CreateReceipt() {
         <div>
             <HeaderNav />
             <p>Create Receipt Body</p>
-
+            <ViewAllReceipts />
             < Camera />
 
 

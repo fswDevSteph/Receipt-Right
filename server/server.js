@@ -8,6 +8,27 @@ const db = require('./config/connection');
 
 const PORT = process.env.PORT || 3001;
 const app = express();
+const cloudinary = require('cloudinary').v2;
+const cors = require('cors');
+//
+app.use(cors());
+cloudinary.config({
+  cloud_name: 'dohtfj5zs',
+  api_key: '588842527859546',
+  api_secret: '-WihU7kL-S4JYThwqLF_aGcWBKw'
+});
+
+app.get('/api/images', (req, res) => {
+  cloudinary.api.resources(
+    function (error, result) {
+      if (error) {
+        res.status(500).send(error);
+      } else {
+        res.send(result.resources);
+      }
+    }
+  );
+});
 const server = new ApolloServer({
   typeDefs,
   resolvers,
@@ -15,10 +36,10 @@ const server = new ApolloServer({
 
 const startApolloServer = async () => {
   await server.start();
-  
+
   app.use(express.urlencoded({ extended: true }));
   app.use(express.json());
-  
+
   app.use('/graphql', expressMiddleware(server));
 
   // if we're in production, serve client/dist as static assets
@@ -28,7 +49,7 @@ const startApolloServer = async () => {
     app.get('*', (req, res) => {
       res.sendFile(path.join(__dirname, '../client/dist/index.html'));
     });
-  } 
+  }
 
   db.once('open', () => {
     app.listen(PORT, () => {

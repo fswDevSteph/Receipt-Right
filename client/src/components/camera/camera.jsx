@@ -25,7 +25,7 @@ function Camera() {
                 camera.play();
             })
             .catch(err => {
-                console.log.error(err);
+                console.error(err);
             })
     }
 

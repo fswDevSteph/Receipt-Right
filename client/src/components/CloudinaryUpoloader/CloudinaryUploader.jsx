@@ -10,6 +10,7 @@ function CloudinaryUploader() {
             uploadPreset: 'fhblvqoq',
             apiKey: '588842527859546',
             apiSecret: '-WihU7kL-S4JYThwqLF_aGcWBKw',
+            tag: ['receipt'],
             environmentVariable: 'CLOUDINARY_URL=cloudinary://588842527859546:-WihU7kL-S4JYThwqLF_aGcWBKw@dohtfj5zs'
         }, function (error, result) {
             console.log(result);
