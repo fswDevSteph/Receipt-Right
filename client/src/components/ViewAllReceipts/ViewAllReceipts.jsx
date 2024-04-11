@@ -24,7 +24,7 @@ function ViewAllReceipts() {
     }, [])
     return (
         <div>
-            <HeaderNav />
+
 
             <h1 >View All Receipts</h1>
             <div style={{ display: "flex" }}>
@@ -34,12 +34,12 @@ function ViewAllReceipts() {
             <section>
                 <div>
                     <h2>Receipts</h2>
-                    liView all Receipts Page</p>
-                {images}
-        </div>
+                    <p>View all Receipts Page</p>
+                    {images}
+                </div>
             </section >
-        {/* {loading ? <h1>Loading...</h1> : <ReceiptsTable receipts={receipts} />} */ }
-        < FooterNav />
+            {/* {loading ? <h1>Loading...</h1> : <ReceiptsTable receipts={receipts} />} */}
+
         </div >
     );
 }

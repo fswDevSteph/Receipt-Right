@@ -18,7 +18,7 @@ function CreateReceipt() {
     const [receiptCategory, setReceiptCategory] = useState('');
     const [receiptNotes, setReceiptNotes] = useState('');
 
-    // const [addReceipt, { error }] = useMutation(ADD_RECEIPT);
+    const [addReceipt, { error }] = useMutation(ADD_RECEIPT);
 
     const handleFormSubmit = async (event) => {
         event.preventDefault();
@@ -67,35 +67,31 @@ function CreateReceipt() {
     return (
         <div>
             <HeaderNav />
-            liCreate Receipt Body</p>
+            <p>Create Receipt Body</p>
             <ViewAllReceipts />
-            < Camera />
-
+            <Camera />
 
             <img className='camera__icon__align' src={cameraIcon} alt="camera image icon" width="300" height="240" />
-
 
             <Link to="/CreateReceipt">
                 <img className='add__receipt__icon__align' src={addIcon} alt="add image icon" width="30" height="24" />
             </Link>
 
-
-            <form action="">
-                <label label="receiptName" onSubmit={handleFormSubmit}>Receipt Name:</label>
+            <form onSubmit={handleFormSubmit}>
+                <label>Receipt Name:</label>
                 <input type="text" id="receiptName" name="receiptName" onChange={handleChange}></input>
-                <label label="receiptDate">Receipt Date:</label>
+                <label>Receipt Date:</label>
                 <input type="date" id="receiptDate" name="receiptDate" onChange={handleChange}></input>
-                <label label="receiptAmount">Receipt Amount:</label>
+                <label>Receipt Amount:</label>
                 <input type="number" id="receiptAmount" name="receiptAmount" onChange={handleChange}></input>
-                <label label="receiptCategory">Receipt Category:</label>
+                <label>Receipt Category:</label>
                 <input type="text" id="receiptCategory" name="receiptCategory" onChange={handleChange}></input>
-                <label label="receiptNotes">Receipt Notes:</label>
-                <textarea type="message" id="receiptNotes" name="receiptNotes" onChange={handleChange}></textarea>
+                <label>Receipt Notes:</label>
+                <textarea id="receiptNotes" name="receiptNotes" onChange={handleChange}></textarea>
                 <input type="submit" value="Submit"></input>
             </form>
 
-
-            < Upload />
+            <Upload />
 
             <FooterNav />
         </div >

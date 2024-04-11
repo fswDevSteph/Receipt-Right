@@ -24,6 +24,7 @@ import { setContext } from '@apollo/client/link/context';
 import { Outlet } from 'react-router-dom';
 import './App.css'
 import Profile from './components/Profile/Profile.jsx';
+import RegistrationPage from './components/RegistrationPage/RegistrationPage.jsx';
 
 
 // Construct our main GraphQL API endpoint
@@ -60,6 +61,7 @@ function App() {
           <Route path="/Profile" element={<Profile />} />
           <Route path="/Export" element={<Export />} />
           <Route path="/SettingsPage" element={<SettingsPage />} />
+          <Route path="/RegistrationPage" element={<RegistrationPage />} />
 
         </Routes>
 

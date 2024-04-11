@@ -7,11 +7,11 @@ function Profile() {
     return (
         <>
             <HeaderNav />
-            <h2>Settings Page</h2>
-            lichange email</p >
-                lichange password</p >
-                    lidelete account</p >
-                        <FooterNav />
+            <h2>Profile Page</h2>
+            <li>change email</li>
+            <li>change password</li >
+            <li>delete account</li>
+            <FooterNav />
         </>
     );
 }

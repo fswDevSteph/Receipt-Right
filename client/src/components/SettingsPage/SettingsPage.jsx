@@ -13,9 +13,7 @@ function SettingsPage() {
             <h2>Settings Page</h2>
             {/* Code here */}
             <ul>
-                <li>change email </li>
-                <li>change password</li>
-                <li>delete account</li>
+
                 <li>contact us</li>
             </ul>
 
