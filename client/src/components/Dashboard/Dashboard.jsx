@@ -1,5 +1,5 @@
 // import { useState } from 'react';
-import './Dashboard.css';
+// import './Dashboard.css';
 import HeaderNav from '../HeaderNav/HeaderNav';
 import FooterNav from '../FooterNav/FooterNav';
 
@@ -11,6 +11,7 @@ function Dashboard() {
         <div>
             <HeaderNav />
             <p>Dashboard Body</p>
+
             {/* Code here */}
 
             <FooterNav />

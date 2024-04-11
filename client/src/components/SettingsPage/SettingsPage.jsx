@@ -10,7 +10,7 @@ function SettingsPage() {
     return (
         <div>
             <HeaderNav />
-
+            <h2>Settings Page</h2>
             {/* Code here */}
             <p>SettingsPage Body</p>
             <p>change email </p>

@@ -3,12 +3,12 @@ import { useState } from 'react'
 // import ContactUs from './components/ContactUs/ContactUs.jsx';
 // import FooterNav from './components/FooterNav/FooterNav.jsx';
 // import ViewAllReceipts from './components/ViewAllReceipts/ViewAllReceipts.jsx';
-
+import Export from './components/ExportReceipts/Export.jsx';
 // import Dashboard from './components/Dashboard/Dashboard.jsx';
 import HomePage from './components/HomePage/HomePage.jsx';
 // // import LoginPage from './components/LoginPage/LoginPage.jsx';
 // import LogoutPage from './components/LogoutPage/LogoutPage.jsx';
-// import SettingsPage from './components/SettingsPage/SettingsPage.jsx';
+import SettingsPage from './components/SettingsPage/SettingsPage.jsx';
 // import RegistrationPage from './components/RegistrationPage/RegistrationPage.jsx';
 import CreateReceipt from './components/CreateReceipt/CreateReceipt.jsx';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
@@ -54,9 +54,13 @@ function App() {
     <ApolloProvider client={client}>
       <Router>
         <Routes>
-          <Route path="/" element={<HomePage />} />
+
+          <Route path="/HomePage" element={<HomePage />} />
           <Route path="/CreateReceipt" element={<CreateReceipt />} />
           <Route path="/Profile" element={<Profile />} />
+          <Route path="/Export" element={<Export />} />
+          <Route path="/SettingsPage" element={<SettingsPage />} />
+
         </Routes>
 
 

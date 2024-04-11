@@ -2,7 +2,7 @@ import './HeaderNav.css';
 
 import addIcon from '../assets/icons/addIcon2.png'; //@importing icon variable from icons path
 import personIcon from '../assets/icons/personIcon.png';
-import dashboard from '../assets/icons/dashboardIcon.png';
+import home from '../assets/icons/homeIcon.png';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
@@ -21,7 +21,7 @@ function HeaderNav() {
                                 <img src={addIcon} alt="add image icon" width="30" height="24" />
                             </Link>
                         </div>
-                        <div className='nav__bar__right'>
+                        <div className='nav__bar__left'>
                             <Link to="/Profile">
                                 <img src={personIcon} alt="profile image icon" width="30" height="24" />
                             </Link>
@@ -34,10 +34,15 @@ function HeaderNav() {
                             </Link>
                         </div> */}
 
-                        <div className='mid'>
-                            <Link to="/CreateReceipt">
-                                <img src={dashboard} alt="add image icon" width="30" height="24" />
+                        {/* <div className='nav__bar__mid'>
+                            <Link to="/HomePage">
+                                <img src={home} alt="add image icon" width="30" height="24" />
                                 <h2>Receipt Right</h2>
+                            </Link>
+                        </div> */}
+                        <div className='nav__bar__mid'>
+                            <Link to="/HomePage">
+                                <img src={home} alt="add image icon" width="30" height="24" />
                             </Link>
                         </div>
 

@@ -7,7 +7,7 @@ function Profile() {
     return (
         <>
             <HeaderNav />
-            <p>Profile Body</p>
+            <h2>Settings Page</h2>
             <p>change email</p>
             <p>change password</p>
             <p>delete account</p>
