@@ -8,10 +8,10 @@ function Profile() {
         <>
             <HeaderNav />
             <h2>Settings Page</h2>
-            <p>change email</p>
-            <p>change password</p>
-            <p>delete account</p>
-            <FooterNav />
+            lichange email</p >
+                lichange password</p >
+                    lidelete account</p >
+                        <FooterNav />
         </>
     );
 }

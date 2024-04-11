@@ -12,10 +12,12 @@ function SettingsPage() {
             <HeaderNav />
             <h2>Settings Page</h2>
             {/* Code here */}
-            <p>SettingsPage Body</p>
-            <p>change email </p>
-            <p>change password</p>
-            <p>delete account</p>
+            <ul>
+                <li>change email </li>
+                <li>change password</li>
+                <li>delete account</li>
+                <li>contact us</li>
+            </ul>
 
             <FooterNav />
         </div>

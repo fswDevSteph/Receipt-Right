@@ -10,12 +10,12 @@ function Dashboard() {
     return (
         <div>
             <HeaderNav />
-            <p>Dashboard Body</p>
+            liDashboard Body</p>
 
-            {/* Code here */}
+            {/* Code here */ }
 
-            <FooterNav />
-        </div>
+    <FooterNav />
+        </div >
     )
 }
 

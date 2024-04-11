@@ -14,7 +14,7 @@ function HomePage() {
             <HeaderNav />
 
             {/* Code here */}
-            <h2>Settings Page</h2>
+            <h2>Home Page</h2>
             <ul>Should Have:
                 <li>How to use diagram </li>
                 <li>Icon = Page for navigation</li>

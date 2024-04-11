@@ -12,16 +12,16 @@ function Export() {
     return (
         <div>
             <HeaderNav />
-            <p>Export Receipts body</p>
+            liExport Receipts body</p>
             <ul>Should have:
                 <li>Receipts filter</li>
                 <li>Export button</li>
                 <li>Export to CVS function</li>
             </ul>
-            {/* Code here */}
+            {/* Code here */ }
 
-            <FooterNav />
-        </div>
+    <FooterNav />
+        </div >
     )
 }
 

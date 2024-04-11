@@ -67,7 +67,7 @@ function CreateReceipt() {
     return (
         <div>
             <HeaderNav />
-            <p>Create Receipt Body</p>
+            liCreate Receipt Body</p>
             <ViewAllReceipts />
             < Camera />
 
@@ -98,7 +98,7 @@ function CreateReceipt() {
             < Upload />
 
             <FooterNav />
-        </div>
+        </div >
     )
 }
 
