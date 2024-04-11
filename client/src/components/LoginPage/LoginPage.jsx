@@ -54,7 +54,7 @@ function LoginPage() {
                         <h4 className="card-header bg-dark text-light p-2">Login</h4>
                         <div className="card-body">
                             {data ? (
-                                li
+                                <p>
                                     Success! You may now head{' '}
                                     {/* <Link to="/">back to the homepage.</Link> */}
                                 </p>

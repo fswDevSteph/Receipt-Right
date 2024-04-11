@@ -6,10 +6,10 @@ import { useState } from 'react'
 import Export from './components/ExportReceipts/Export.jsx';
 // import Dashboard from './components/Dashboard/Dashboard.jsx';
 import HomePage from './components/HomePage/HomePage.jsx';
-// // import LoginPage from './components/LoginPage/LoginPage.jsx';
+import LoginPage from './components/LoginPage/LoginPage.jsx';
 // import LogoutPage from './components/LogoutPage/LogoutPage.jsx';
 import SettingsPage from './components/SettingsPage/SettingsPage.jsx';
-// import RegistrationPage from './components/RegistrationPage/RegistrationPage.jsx';
+import RegistrationPage from './components/RegistrationPage/RegistrationPage.jsx';
 import CreateReceipt from './components/CreateReceipt/CreateReceipt.jsx';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
@@ -24,7 +24,7 @@ import { setContext } from '@apollo/client/link/context';
 import { Outlet } from 'react-router-dom';
 import './App.css'
 import Profile from './components/Profile/Profile.jsx';
-import RegistrationPage from './components/RegistrationPage/RegistrationPage.jsx';
+//import RegistrationPage from './components/RegistrationPage/RegistrationPage.jsx';
 
 
 // Construct our main GraphQL API endpoint
@@ -62,6 +62,7 @@ function App() {
           <Route path="/Export" element={<Export />} />
           <Route path="/SettingsPage" element={<SettingsPage />} />
           <Route path="/RegistrationPage" element={<RegistrationPage />} />
+          <Route path="/LoginPage" element={<LoginPage />} />
 
         </Routes>
 
