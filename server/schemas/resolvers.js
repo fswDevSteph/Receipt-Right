@@ -1,6 +1,6 @@
 const { User, Receipt } = require('../models');
-const { signToken, AuthenticationError } = require('../utils/auth');
-
+const { signToken, EmailError, PasswordError } = require('../utils/auth');
+const bcrypt = require('bcrypt');
 const resolvers = {
   Query: {
     users: async () => {
@@ -26,7 +26,8 @@ const resolvers = {
 
   Mutation: {
     addUser: async (parent, { username, email, password }) => {
-      const user = await User.create({ username, email, password });
+      const hashedPassword = await bcrypt.hash(password, 10);
+      const user = await User.create({ username, email, password: hashedPassword });
       const token = signToken(user);
       return { token, user };
     },
@@ -34,13 +35,14 @@ const resolvers = {
       const user = await User.findOne({ email });
 
       if (!user) {
-        throw AuthenticationError;
+        throw EmailError;
       }
 
       const correctPw = await user.isCorrectPassword(password);
 
+
       if (!correctPw) {
-        throw AuthenticationError;
+        throw PasswordError;
       }
 
       const token = signToken(user);

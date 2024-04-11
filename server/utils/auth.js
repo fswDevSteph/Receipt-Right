@@ -5,7 +5,12 @@ const secret = 'mysecretssshhhhhhh';
 const expiration = '2h';
 
 module.exports = {
-  AuthenticationError: new GraphQLError('Could not authenticate user.', {
+  EmailError: new GraphQLError('Could not find user with that email.', {
+    extensions: {
+      code: 'UNAUTHENTICATED',
+    },
+  }),
+  PasswordError: new GraphQLError('Incorrect Password.', {
     extensions: {
       code: 'UNAUTHENTICATED',
     },

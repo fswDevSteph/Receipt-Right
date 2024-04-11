@@ -47,7 +47,7 @@ function RegistrationPage() {
 
     return (
         <div>
-            <h1>RegistrationPage Body</h1>
+            <h1>OR</h1>
             <div className="flex-row justify-center mb-4">
                 <div className="col-12 col-lg-10">
                     <div className="card">

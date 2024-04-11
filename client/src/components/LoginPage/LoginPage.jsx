@@ -2,6 +2,7 @@
 import './LoginPage.css';
 import HeaderNav from '../HeaderNav/HeaderNav';
 import FooterNav from '../FooterNav/FooterNav';
+import RegistrationPage from '../RegistrationPage/RegistrationPage';
 import { useState } from 'react';
 // import { Link } from 'react-router-dom';
 import { useMutation } from '@apollo/client';
@@ -95,8 +96,7 @@ function LoginPage() {
                     </div>
                 </div>
             </div>
-
-
+            <RegistrationPage />
             <FooterNav />
         </div >
     )
