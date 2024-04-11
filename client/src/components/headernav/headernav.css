@@ -1,10 +1,14 @@
 h2 {
-    color: white;
-    text-shadow: 0 0 10px coral;
+    color: #000080;
+    /* text-shadow: 0 0 10px #3468D3;
+    -webkit-text-stroke: .2px #3468D3; */
 }
 
 .nav__border {
-    background-color: #3468D3;
+    /* background-color: #3468D3; */
+    /* background: linear-gradient(to right, #040080, #343F99, #7179B6); */
+    background: linear-gradient(to right, #040080, #343F99, #7179B6, #C7CAE2);
+    padding: 1em;
     padding: 1em;
     width: 100%;
 

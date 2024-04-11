@@ -1,5 +1,8 @@
 // import { useState } from 'react';
-import './HomePage.css';
+import React from 'react';
+// import './HomePage.css ';
+import logo from '../assets/icons/receipt_right_logo.png';
+
 import HeaderNav from '../HeaderNav/HeaderNav';
 import FooterNav from '../FooterNav/FooterNav';
 
@@ -15,6 +18,7 @@ function HomePage() {
 
             {/* Code here */}
             <h2>Home Page</h2>
+            <img src={logo} alt="logo" />
             <ul>Should Have:
                 <li>How to use diagram </li>
                 <li>Icon = Page for navigation</li>
