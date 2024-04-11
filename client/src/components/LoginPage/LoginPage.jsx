@@ -7,7 +7,7 @@ import { useState } from 'react';
 // import { Link } from 'react-router-dom';
 import { useMutation } from '@apollo/client';
 import { LOGIN_USER } from '../../utils/mutations';
-
+import { Link } from 'react-router-dom';
 import Auth from '../../utils/auth';
 
 function LoginPage() {
@@ -34,15 +34,17 @@ function LoginPage() {
             });
 
             Auth.login(data.login.token);
+
+            setFormState({
+                email: '',
+                password: '',
+            });
+            window.location.replace("/HomePage")
         } catch (e) {
             console.error(e);
         }
 
         // clear form values
-        setFormState({
-            email: '',
-            password: '',
-        });
     };
 
     return (

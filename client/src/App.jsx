@@ -56,7 +56,7 @@ function App() {
       <Router>
         <Routes>
 
-          <Route path="/" element={<HomePage />} />
+          <Route path="/" element={<LoginPage />} />
           <Route path="/HomePage" element={<HomePage />} />
           <Route path="/CreateReceipt" element={<CreateReceipt />} />
           <Route path="/Profile" element={<Profile />} />
