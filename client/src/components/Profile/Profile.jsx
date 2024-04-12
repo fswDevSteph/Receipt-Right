@@ -1,9 +1,9 @@
 import { Link } from 'react-router-dom';
-import './Profile.css';
+import './ContactUs.css';
 import HeaderNav from '../HeaderNav/HeaderNav';
 import FooterNav from '../FooterNav/FooterNav';
 
-function Profile() {
+function ContactUs() {
     const handleEmailChange = (event) => {
         event.preventDefault();
         // Handle email change
@@ -47,6 +47,6 @@ function Profile() {
     );
 }
 
-export default Profile;
+export default ContactUs;
 
 

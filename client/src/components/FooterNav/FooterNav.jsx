@@ -2,7 +2,7 @@ import './FooterNav.css';
 import addIcon from '../assets/icons/addIcon2.png'; //@importing icon variable from icons path
 // import personIcon from '../assets/icons/personIcon.png';
 import home from '../assets/icons/homeIcon.png';
-import exportIcon from '../assets/icons/exportIcon.png';
+import personIcon from '../assets/icons/personIcon.png';
 import settingsIcon from '../assets/icons/settingsIcon.png';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
@@ -17,12 +17,13 @@ function FooterNav() {
                 <Container>
                     <Navbar.Brand  >
                         <div className='nav__bar__left'>
-                            <Link to="/Export">
-                                <img className='' src={exportIcon} alt="export image icon" width="30" height="24" />
+                            <Link to="/ContactUs">
+                                <img src={personIcon} alt="ContactUs image icon" width="30" height="24" />
                             </Link>
                         </div>
+
                         <div className='nav__bar__right'>
-                            <Link to="/Profile">
+                            <Link to="/ContactUs">
                                 <img src={settingsIcon} alt="add image icon" width="30" height="24" />
                             </Link>
                         </div>

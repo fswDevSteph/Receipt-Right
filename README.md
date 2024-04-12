@@ -23,7 +23,7 @@ Here are some features I felt were needed:
 - Login / Logout
 - Authentication
 - How to navigate Graphic
-- Profile
+- ContactUs
    -change email
    -change password
    -delete account

@@ -24,7 +24,7 @@ function Settings() {
     return (
         <>
             <HeaderNav />
-            <h2>Profile/now settiungs Page</h2>
+            <h2>ContactUs/now settings Page</h2>
             <div className='form_container'>
                 <form onSubmit={handleEmailChange}>
                     <label>

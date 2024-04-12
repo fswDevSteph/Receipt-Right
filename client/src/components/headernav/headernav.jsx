@@ -1,7 +1,7 @@
 import './HeaderNav.css';
 
 import addIcon from '../assets/icons/addIcon2.png'; //@importing icon variable from icons path
-import personIcon from '../assets/icons/personIcon.png';
+import exportIcon from '../assets/icons/exportIcon.png';
 import home from '../assets/icons/homeIcon.png';
 import Container from 'react-bootstrap/Container';
 
@@ -15,31 +15,16 @@ function HeaderNav() {
             <Navbar expand="lg" className="bg-body-tertiary nav__border">
                 <Container>
                     <Navbar.Brand as="div" >
-
-                        <div className='nav__bar__right'>
+                        <div className='nav__bar__left'>
                             <Link to="/CreateReceipt">
                                 <img src={addIcon} alt="add image icon" width="30" height="24" />
                             </Link>
                         </div>
-                        <div className='nav__bar__left'>
-                            <Link to="/ContactUs">
-                                <img src={personIcon} alt="profile image icon" width="30" height="24" />
+                        <div className='nav__bar__right'>
+                            <Link to="/Export">
+                                <img className='' src={exportIcon} alt="export image icon" width="30" height="24" />
                             </Link>
                         </div>
-
-
-                        {/* <div className='nav__bar__mid'>
-                            <Link to="/CreateReceipt">
-                                <h2 src={addIcon} alt="add image icon" width="30" height="24" >Receipt Right</h2>
-                            </Link>
-                        </div> */}
-
-                        {/* <div className='nav__bar__mid'>
-                            <Link to="/HomePage">
-                                <img src={home} alt="add image icon" width="30" height="24" />
-                                <h2>Receipt Right</h2>
-                            </Link>
-                        </div> */}
                         <div className='nav__bar__mid'>
                             <Link to="/HomePage">
                                 <img src={home} alt="add image icon" width="30" height="24" />
