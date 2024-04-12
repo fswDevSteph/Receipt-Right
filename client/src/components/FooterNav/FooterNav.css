@@ -1,24 +1,24 @@
 .nav__border {
-    background-color: #3468D3;
     padding: 1em;
     width: 100%;
-
 }
 
 .nav__bar__right {
-    justify-content: flex-end;
     float: right;
 }
 
-.nav__bar__mid {
-    float: center;
-}
+
 
 .nav__bar__left {
-    justify-content: flex-start;
     float: left;
 }
 
 .nav__bar__row {
     justify-content: space-between;
+}
+
+.small_font {
+    font-size: 10px;
+    margin-top: 0;
+    color: white !important;
 }

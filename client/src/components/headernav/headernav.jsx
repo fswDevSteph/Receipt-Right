@@ -18,16 +18,19 @@ function HeaderNav() {
                         <div className='nav__bar__left'>
                             <Link to="/CreateReceipt">
                                 <img src={addIcon} alt="add image icon" width="30" height="24" />
+                                <p className='small_font'>Add Receipt</p>
                             </Link>
                         </div>
                         <div className='nav__bar__right'>
                             <Link to="/Export">
                                 <img className='' src={exportIcon} alt="export image icon" width="30" height="24" />
+                                <p className='small_font'>Download Receipt</p>
                             </Link>
                         </div>
-                        <div className='nav__bar__mid'>
+                        <div >
                             <Link to="/HomePage">
                                 <img src={home} alt="add image icon" width="30" height="24" />
+                                <p className='small_font'>Home</p>
                             </Link>
                         </div>
 

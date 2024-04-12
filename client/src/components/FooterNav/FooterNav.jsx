@@ -19,17 +19,20 @@ function FooterNav() {
                         <div className='nav__bar__left'>
                             <Link to="/ContactUs">
                                 <img src={personIcon} alt="ContactUs image icon" width="30" height="24" />
+                                <p className='small_font'>Contact Us</p>
                             </Link>
                         </div>
 
                         <div className='nav__bar__right'>
                             <Link to="/ContactUs">
                                 <img src={settingsIcon} alt="add image icon" width="30" height="24" />
+                                <p className='small_font'>Settings</p>
                             </Link>
                         </div>
-                        <div className='nav__bar__mid '>
+                        <div >
                             <Link to="/HomePage">
                                 <img src={home} alt="home icon" width="30" height="24" />
+                                <p className='small_font'>Home</p>
                             </Link>
                         </div>
 
