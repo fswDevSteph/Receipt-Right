@@ -1,7 +1,7 @@
 {
-  "name": "tech-matchup-app",
+  "name": "Receipt-Right",
   "version": "1.0.0",
-  "description": "",
+  "description": "A Receipt storage and organization application to provide a modern approach for showing up organized and prepared for your tax account by utilizing technology to help users track and organize deductible expenses, put users money back in users pockets and create a seamless process.",
   "main": "server/server.js",
   "scripts": {
     "start": "node server/server.js --ignore client",
@@ -10,7 +10,7 @@
     "seed": "cd server && npm run seed",
     "build": "cd client && npm run build"
   },
-  "author": "Karen Bourgeois, Emilia Stewart, and Stephanie Perroni",
+  "author": "Stephanie Perroni",
   "license": "ISC",
   "devDependencies": {
     "concurrently": "^5.3.0"

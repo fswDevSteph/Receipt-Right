@@ -8,7 +8,7 @@
     "seed": "node seeds/seed.js",
     "watch": "nodemon server.js"
   },
-  "author": "",
+  "author": "Stephanie Perroni",
   "license": "ISC",
   "dependencies": {
     "@apollo/server": "^4.7.1",
