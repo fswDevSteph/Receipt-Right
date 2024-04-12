@@ -71,16 +71,18 @@ function ViewAllReceipts() {
         <div>
 
 
-            <h4>Click the receipt to download</h4>
+
             <div style={{ display: "flex" }}>
 
                 <FilterButton style={{ marginLeft: "auto" }} />
             </div>
             <section>
                 <div>
-                    <h2>Receipts</h2>
-                    <p>View all Receipts Page</p>
+                    <h2>View ALL Receipts</h2>
+
                     {images}
+
+                    <h3 className='download_text_red'>Click the receipt to download</h3>
                 </div>
             </section >
             {/* {loading ? <h1>Loading...</h1> : <ReceiptsTable receipts={receipts} />} */}

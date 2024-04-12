@@ -13,12 +13,11 @@ function Export() {
     return (
         <div>
             <HeaderNav />
-            <p>Export Receipts body</p>
-            <ul>Should have:
+
+            {/* <ul>NEEDS:
                 <li>Receipts filter</li>
-                <li>Export button</li>
-                <li>Export to CVS function</li>
-            </ul>
+
+            </ul> */}
             <ViewAllReceipts />
 
             <FooterNav />

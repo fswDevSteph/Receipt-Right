@@ -1,0 +1,49 @@
+.form_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin: 20px auto;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #040080;
+    color: white;
+    width: 80%;
+
+    max-width: 500px;
+}
+
+form input[type="submit"] {
+    /* margin-left: auto; */
+    padding: 5px 10px;
+    background-color: white;
+    color: #040080;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+    background-color: #7179B6;
+    color: white;
+
+}
+
+form input[type="submit"] {
+    align-self: center;
+    /* Centers button in the flex container */
+    padding: 5px 10px;
+    background-color: white;
+    color: #040080;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
