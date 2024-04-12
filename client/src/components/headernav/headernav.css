@@ -3,33 +3,35 @@ h2 {
     text-shadow: 0 0 10px white;
     /* -webkit-text-stroke: .2px white; */
 
-    .nav__border {
-        /* background-color: #3468D3; */
-        background: linear-gradient(to right, #040080, #343F99, #7179B6);
-        /* background: linear-gradient(to right, #040080, #343F99, #7179B6, #C7CAE2); */
-        /* background: linear-gradient(to right, #F600FE, #C900FE, #A136FF, #5142F0, #0033D9); */
+}
 
-        padding: 1em;
-        padding: 1em;
-        width: 100%;
+.nav__border {
+    /* background-color: #3468D3; */
+    background: linear-gradient(to right, #040080, #343F99, #7179B6);
+    /* background: linear-gradient(to right, #040080, #343F99, #7179B6, #C7CAE2); */
+    /* background: linear-gradient(to right, #F600FE, #C900FE, #A136FF, #5142F0, #0033D9); */
 
-    }
+    padding: 1em;
+    padding: 1em;
+    width: 100%;
 
-    .nav__bar__right {
-        justify-content: flex-end;
-        float: right;
-    }
+}
 
-    .nav__bar__mid {
-        float: center;
-    }
+.nav__bar__right {
+    justify-content: flex-end;
+    float: right;
+}
 
-    .nav__bar__left {
-        justify-content: flex-start;
-        float: left;
-        margin: 0;
-    }
+.nav__bar__mid {
+    float: center;
+}
 
-    .nav__bar__row {
-        justify-content: space-between;
-    }
+.nav__bar__left {
+    justify-content: flex-start;
+    float: left;
+    margin: 0;
+}
+
+.nav__bar__row {
+    justify-content: space-between;
+}

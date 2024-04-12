@@ -1,5 +1,4 @@
 # Receipt-Right
-# Receipt Master
 
 ## Contents
 
@@ -28,8 +27,8 @@ Here are some features I felt were needed:
    -change email
    -change password
    -delete account
-- Take an image
 - Upload Image
+- Take an image
 
 
 ## Technologies-Used
