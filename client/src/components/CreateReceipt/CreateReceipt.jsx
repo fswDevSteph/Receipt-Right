@@ -4,12 +4,13 @@ import { ADD_RECEIPT } from '../../utils/mutations';
 import './CreateReceipt.css';
 import HeaderNav from '../HeaderNav/HeaderNav';
 import FooterNav from '../FooterNav/FooterNav';
-import Camera from '../Camera/Camera';
+// import Camera from '../Camera/Camera';
 import Upload from '../Upload/Upload';
 import addIcon from '../assets/icons/addIcon2.png';
-import cameraIcon from '../assets/icons/cameraIcon.png'
-import { Link } from 'react-router-dom'
-import ViewAllReceipts from '../ViewAllReceipts/ViewAllReceipts';
+import cameraIcon from '../assets/icons/cameraIcon.png';
+import { Link } from 'react-router-dom';
+// import ViewAllReceipts from '../ViewAllReceipts/ViewAllReceipts';
+import CloudinaryUploader from '../CloudinaryUploader/CloudinaryUploader';
 
 function CreateReceipt() {
     const [receiptName, setReceiptName] = useState('');
@@ -67,9 +68,9 @@ function CreateReceipt() {
     return (
         <div>
             <HeaderNav />
-            <p>Create Receipt Body</p>
-            <ViewAllReceipts />
-            <Camera />
+            <CloudinaryUploader />
+            {/* <ViewAllReceipts /> */}
+            {/* <Camera /> */}
 
             <img className='camera__icon__align' src={cameraIcon} alt="camera image icon" width="300" height="240" />
 
