@@ -1,6 +1,6 @@
 import { useState } from 'react'
 // import HeaderNav from './components/HeaderNav/HeaderNav.jsx';
-// import ContactUs from './components/ContactUs/ContactUs.jsx';
+import ContactUs from './components/ContactUs/ContactUs.jsx';
 // import FooterNav from './components/FooterNav/FooterNav.jsx';
 // import ViewAllReceipts from './components/ViewAllReceipts/ViewAllReceipts.jsx';
 import Export from './components/ExportReceipts/Export.jsx';
@@ -63,6 +63,7 @@ function App() {
           <Route path="/Export" element={<Export />} />
           <Route path="/SettingsPage" element={<SettingsPage />} />
           {/* <Route path="/RegistrationPage" element={<RegistrationPage />} /> */}
+          <Route path="ContactUs" element={<ContactUs />} />
           <Route path="/LoginPage" element={<LoginPage />} />
 
         </Routes>

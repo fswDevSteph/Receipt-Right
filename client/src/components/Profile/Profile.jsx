@@ -22,7 +22,7 @@ function Profile() {
     return (
         <>
             <HeaderNav />
-            <h2>Profile Page</h2>
+            <h2>Settings Page</h2>
             <div className='form_container'>
                 <form onSubmit={handleEmailChange}>
                     <label>

@@ -4,7 +4,7 @@ import addIcon from '../assets/icons/addIcon2.png'; //@importing icon variable f
 import personIcon from '../assets/icons/personIcon.png';
 import home from '../assets/icons/homeIcon.png';
 import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
+
 import Navbar from 'react-bootstrap/Navbar';
 
 import { Link } from 'react-router-dom';
@@ -22,7 +22,7 @@ function HeaderNav() {
                             </Link>
                         </div>
                         <div className='nav__bar__left'>
-                            <Link to="/Profile">
+                            <Link to="/ContactUs">
                                 <img src={personIcon} alt="profile image icon" width="30" height="24" />
                             </Link>
                         </div>

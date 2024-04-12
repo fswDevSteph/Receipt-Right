@@ -22,7 +22,7 @@ function FooterNav() {
                             </Link>
                         </div>
                         <div className='nav__bar__right'>
-                            <Link to="/SettingsPage">
+                            <Link to="/Profile">
                                 <img src={settingsIcon} alt="add image icon" width="30" height="24" />
                             </Link>
                         </div>

@@ -1,9 +1,9 @@
 // import { useState } from 'react';
 import './ContactUs.css';
-// import HeaderNav from '../HeaderNav/HeaderNav';
-// import FooterNav from '../FooterNav/FooterNav';
+import HeaderNav from '../HeaderNav/HeaderNav';
+import FooterNav from '../FooterNav/FooterNav';
 import React, { useState } from 'react';
-
+import { Link } from 'react-router-dom';
 function ContactUs() {
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
@@ -16,7 +16,7 @@ function ContactUs() {
 
     return (
         <div className="contactus">
-            {/* <HeaderNav /> */}
+            <HeaderNav />
 
             <h2>Contact:</h2>
             <h2>Stephanie Perroni</h2>
@@ -38,7 +38,7 @@ function ContactUs() {
                     <button type="submit">Submit</button>
                 </form>
             </div>
-            {/* <FooterNav /> */}
+            <FooterNav />
         </div >
     )
 }

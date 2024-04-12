@@ -19,11 +19,7 @@ function HomePage() {
             {/* Code here */}
             <h2>Home Page</h2>
             <img src={logo} alt="logo" />
-            <ul>Should Have:
-                <li>How to use diagram </li>
-                <li>Icon = Page for navigation</li>
 
-            </ul>
 
             <FooterNav />
         </div>
