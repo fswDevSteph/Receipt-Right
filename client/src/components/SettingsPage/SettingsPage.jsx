@@ -2,6 +2,7 @@
 import './SettingsPage.css';
 import HeaderNav from '../HeaderNav/HeaderNav';
 import FooterNav from '../FooterNav/FooterNav';
+import ContactUs from '../ContactUs/ContactUs';
 
 
 function SettingsPage() {
@@ -10,12 +11,9 @@ function SettingsPage() {
     return (
         <div>
             <HeaderNav />
-            <h2>Settings Page</h2>
-            {/* Code here */}
-            <ul>
+            <h1>Settings Page</h1>
 
-                <li>contact us</li>
-            </ul>
+            <ContactUs />
 
             <FooterNav />
         </div>
