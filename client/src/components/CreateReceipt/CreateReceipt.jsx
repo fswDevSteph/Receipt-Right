@@ -15,7 +15,7 @@ import { Link } from 'react-router-dom';
 import CloudinaryUploader from '../CloudinaryUploader/CloudinaryUploader';
 
 function CreateReceipt() {
-    const [receiptName, setReceiptName] = useState('');
+    const [receiptEmail, setReceiptEmail] = useState('');
     const [receiptDate, setReceiptDate] = useState('');
     const [receiptAmount, setReceiptAmount] = useState('');
     const [receiptCategory, setReceiptCategory] = useState('');
@@ -29,7 +29,7 @@ function CreateReceipt() {
         try {
             const { data } = await addReceipt({
                 variables: {
-                    receiptName,
+                    receiptEmail,
                     receiptDate,
                     receiptAmount,
                     receiptCategory,
@@ -37,7 +37,7 @@ function CreateReceipt() {
                 },
             });
 
-            setReceiptName('');
+            setReceiptEmail('');
             setReceiptDate('');
             setReceiptAmount('');
             setReceiptCategory('');
@@ -50,8 +50,8 @@ function CreateReceipt() {
     const handleChange = (event) => {
         const { name, value } = event.target;
 
-        if (name === 'receiptName') {
-            setReceiptName(value);
+        if (name === 'receiptEmail') {
+            setReceiptEmail(value);
         }
         if (name === 'receiptDate') {
             setReceiptDate(value);
@@ -75,12 +75,16 @@ function CreateReceipt() {
             uploadPreset: 'fhblvqoq',
             apiKey: '588842527859546',
             apiSecret: '-WihU7kL-S4JYThwqLF_aGcWBKw',
-            tags: ['receipt', receiptCategory],
+            tags: [
+                'receipt',
+                receiptCategory, // Adding various tags to the cloudinary image uploads for the filter functionality
+                receiptEmail,   // and this is for users to find only their uploaded receipts
+            ],
             environmentVariable: 'CLOUDINARY_URL=cloudinary://588842527859546:-WihU7kL-S4JYThwqLF_aGcWBKw@dohtfj5zs'
         }, function (error, result) {
             console.log(result);
         })
-    }, [receiptCategory]);
+    }, [receiptCategory, receiptEmail]);
     return (
 
         <div>
@@ -97,11 +101,13 @@ function CreateReceipt() {
 
                     <label><span className="required" >*</span>Receipt Category:</label>
                     <input type="text" id="receiptCategory" name="receiptCategory" required onChange={handleChange}></input>
+                    <label><span className="required" >*</span>Your Email:</label>
+                    <input type="email" id="receiptEmail" name="receiptEmail" required onChange={handleChange}></input>
                     <label>Receipt Notes:</label>
                     <textarea id="receiptNotes" name="receiptNotes" onChange={handleChange}></textarea>
                     <div>
                         <h1>Take or Upload Receipt Image</h1>
-                        <button disabled={!receiptCategory} onClick={() => { // diabled={!receiptCategory} ,means the button is disabled if the receiptCategory is empty
+                        <button disabled={!receiptCategory || !receiptEmail} onClick={() => { // diabled={!receiptCategory} ,means the button is disabled if the receiptCategory is empty
                             widgetRef.current.open(); //
                         }}>Take or Upload Image</button>
                     </div>
