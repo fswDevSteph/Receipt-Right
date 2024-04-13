@@ -1,14 +1,79 @@
-.hero {
-    /* background-color: #343F99; */
-    /* background-image: url(../assets/icons/pexels1.jpg); */
+h1 {
+    color: var(--navy-color);
+}
 
+
+.grid_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5em;
+}
+
+.branding_message {
+    align-self: center;
+    grid-column: 1;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+
+.branding_section_image {
+    grid-column: 2;
+    grid-row: 1;
+    width: 80%;
 }
 
 .happy_friends_image {
-    width: 30%;
-    height: 15%;
+    width: 80%;
+    height: 90%;
     /* Adjust as needed */
     border-radius: 0 0 90px 90px;
-    margin-top: 0;
+}
 
+.block_white {
+    background-color: white;
+    color: black;
+    display: grid;
+}
+
+.block_black {
+    background-color: black;
+    color: white;
+    display: grid;
+}
+
+.block_beige {
+    background-color: beige;
+    color: black;
+    display: grid;
+}
+
+.block_lightblue {
+    background-color: lightblue;
+    color: black;
+    display: grid;
+}
+
+.block_navy {
+    background-color: var(--navy-color);
+    color: white;
+    display: grid;
+}
+
+.start_now_btn {
+    /* background-color: #BFBC61; */
+    background-color: #E88A4A;
+    color: white;
+    padding: 1.25rem 1.5rem;
+    margin: 0 auto;
+    border-radius: 20px;
+    border: 2px solid var(--navy-color);
+    text-align: center;
+    cursor: pointer;
+    font-size: 1.5rem;
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.start_now_btn:hover {
+    background-color: #CF6D3A;
 }
