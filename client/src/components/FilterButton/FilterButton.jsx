@@ -23,10 +23,10 @@ function FilterButton() {
             {/* Dropdown menu */}
             {isOpen && (
                 <div className="dropdown ">
-                    <button onClick={() => handleItemClick('Choice 1')}>Category 1</button>
-                    <button onClick={() => handleItemClick('Choice 2')}>Category 2</button>
-                    <button onClick={() => handleItemClick('Choice 3')}>Category 3</button>
-
+                    <button onClick={() => handleItemClick('Choice_1')}>Groceries</button>
+                    <button onClick={() => handleItemClick('Choice_2')}>Education</button>
+                    <button onClick={() => handleItemClick('Choice_3')}>Medical</button>
+                    <button onClick={() => handleItemClick('Choice_4')}>Business</button>
                 </div>
             )
             }

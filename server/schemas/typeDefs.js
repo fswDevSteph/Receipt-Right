@@ -9,9 +9,9 @@ const typeDefs = `
 
   type Receipt {
     _id: ID
-    receiptName : String!
+    receiptEmail : String
     receiptDate: String
-    receiptAmount: String!
+    receiptAmount: String
     receiptCategory: String!
     receiptNotes: String
   }
@@ -25,6 +25,7 @@ const typeDefs = `
     users: [User]
     user(username: String!): User
     receipts: [Receipt]
+    receiptCategories: [String]
     receipt(receiptId: ID!): Receipt
     me: User
   }
@@ -33,9 +34,9 @@ const typeDefs = `
     addUser(username: String!, email: String!, password: String!): Auth
     login(email: String!, password: String!): Auth
     addReceipt(
-    receiptName : String!
+    receiptEmail : String!
     receiptDate: String,
-    receiptAmount: String!,
+    receiptAmount: String,
     receiptCategory: String!,
     receiptNotes: String
       ): Receipt

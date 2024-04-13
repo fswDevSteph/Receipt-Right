@@ -100,7 +100,14 @@ function CreateReceipt() {
                 <form className="create_receipt_form" onSubmit={handleFormSubmit}>
 
                     <label><span className="required" >*</span>Receipt Category:</label>
-                    <input type="text" id="receiptCategory" name="receiptCategory" required onChange={handleChange}></input>
+                    <select type="text" id="receiptCategory" name="receiptCategory" required onChange={handleChange}>
+                        <option value="">Select a Category</option>
+                        <option value="Groceries">Groceries</option>
+                        <option value="Education">Education</option>
+                        <option value="Medical">Medical</option>
+                        <option value="Business">Business</option>
+
+                    </select>
                     <label><span className="required" >*</span>Your Email:</label>
                     <input type="email" id="receiptEmail" name="receiptEmail" required onChange={handleChange}></input>
                     <label>Receipt Notes:</label>

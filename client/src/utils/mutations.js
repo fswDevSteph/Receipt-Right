@@ -35,18 +35,12 @@ export const ADD_USER = gql`
 
 
 export const ADD_RECEIPT = gql`
-  mutation addReceipt($receiptName: String! $receiptDate: String, $receiptAmount: String!, $receiptCategory: String!, $receiptNotes: String) {
-  addReceipt(receiptName: $receiptName, receiptDate: $receiptDate, receiptAmount: $receiptAmount, receiptCategory: $receiptCategory, receiptNotes: $receiptNotes) {
-      _id
-      receiptName
-      receiptDate
-      receiptAmount
-      receiptCategory
-      receiptNotes
-    }
+mutation addReceipt($receiptEmail: String!, $receiptCategory: String!) {
+  addReceipt(receiptEmail: $receiptEmail, receiptCategory: $receiptCategory) {
+    receiptCategory
   }
+}
 `;
-
 
 export const REMOVE_RECEIPT = gql`
   mutation removeReceipt($receiptId: ID!) {

@@ -20,9 +20,9 @@ function CloudinaryUploader() {
     return (
         <div>
             <h1>Take or Upload Receipt Image</h1>
-            <button onClick={() => {
+            {/* <button onClick={() => {
                 widgetRef.current.open();
-            }}>Take or Upload Image</button>
+            }}>Take or Upload Image</button> */}
         </div>
     )
 }

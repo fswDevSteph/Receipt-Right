@@ -4,13 +4,13 @@ const { Schema, model } = require('mongoose');
 const receiptSchema = new Schema({
   receiptURL: {
     type: String,
-    required: 'You need to leave a receipt URL!'
+    required: false
   },
-  receiptName: {
+  receiptEmail: {
     type: String,
-    required: 'You need to leave a receipt name!',
-    minlength: 5,
+    required: "must add user email",
     maxlength: 280,
+    required: false,
     trim: true,
   },
   receiptDate: {
@@ -20,12 +20,12 @@ const receiptSchema = new Schema({
   },
   receiptAmount: {
     type: String,
-    required: true,
+    required: false,
   },
 
   receiptCategory: {
     type: String,
-    required: true,
+    required: 'You need to leave a receipt category!',
     maxlength: 25,
   },
 

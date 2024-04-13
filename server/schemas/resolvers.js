@@ -13,6 +13,20 @@ const resolvers = {
       const params = username ? { username } : {};
       return Receipt.find(params).sort({ createdAt: -1 });
     },
+
+    receiptCategories: async () => {
+      // Fetch all receipts from your database
+      const receipts = await Receipt.find();
+
+      // Extract the categories from the receipts
+      const categories = receipts.map(receipt => receipt.receiptCategory);
+
+      // Remove duplicates
+      const uniqueCategories = [...new Set(categories)];
+
+      return uniqueCategories;
+    },
+
     receipt: async (parent, { receiptId }) => {
       return Receipt.findOne({ _id: receiptId });
     },
@@ -49,22 +63,11 @@ const resolvers = {
 
       return { token, user };
     },
-    addReceipt: async (parent, { receiptText }, context) => {
-      if (context.user) {
-        const receipt = await Receipt.create({
-          receiptText,
-          receiptAuthor: context.user.username,
-        });
 
-        await User.findOneAndUpdate(
-          { _id: context.user._id },
-          { $addToSet: { receipts: receipt._id } }
-        );
-
-        return receipt;
-      }
-      throw AuthenticationError;
-      ('You need to be logged in!');
+    addReceipt: async (parent, { receiptCategory, receiptEmail }, context) => {
+      const newReceipt = new Receipt({ receiptCategory, receiptEmail });
+      await newReceipt.save();
+      return newReceipt;
     },
 
     removeReceipt: async (parent, { receiptId }, context) => {

@@ -29,6 +29,18 @@ app.get('/api/images', (req, res) => {
     }
   );
 });
+
+app.get('/api/images/:tag', (req, res) => {
+  const tag = req.params.tag; // Get the tag from the query parameters
+
+  cloudinary.api.resources_by_tag(tag, function (error, result) {
+    if (error) {
+      res.status(500).send('Error fetching images');
+    } else {
+      res.json(result.resources);
+    }
+  });
+});
 const server = new ApolloServer({
   typeDefs,
   resolvers,
