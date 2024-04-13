@@ -1,5 +1,5 @@
 import React, { useRef, useEffect, useState } from 'react';
-
+import './CloudinaryUploader.css';
 function CloudinaryUploader() {
     const cloudinaryRef = useRef();
     const widgetRef = useRef();

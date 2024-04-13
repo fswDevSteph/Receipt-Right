@@ -1,30 +1,40 @@
-.add__receipt__icon__align {
-    display: flex;
-    justify-content: center;
-    align-items: left;
-feature/whiteicons
-    margin-top: 3em;
-
-   
-
- main
-}
-
-/* .camera__icon__align {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 3em;
-} */
-
-feature/whiteicons
-
- main
-form label,
+main form label,
 form input,
 form textarea {
     align-items: flex-start;
     text-align: left;
     display: block;
     margin-bottom: 10px;
+}
+
+.grid_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5em;
+}
+
+.create_receipt_form {
+    /* image CSS from homepage right side */
+    grid-column: 2;
+    grid-row: 1;
+    width: 80%;
+    margin-top: 8em;
+    margin-bottom: 8em;
+}
+
+.create_receipt_image {
+    /*Brand CSS from homepage left side */
+    align-self: center;
+    grid-column: 1;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+
+.create_receipt_img {
+    margin-top: 8em;
+    margin-bottom: 8em;
+    width: 40%;
+    height: 10%;
+    /* Adjust as needed */
+    border-radius: 90px 90px 90px 90px;
 }

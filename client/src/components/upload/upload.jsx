@@ -9,8 +9,8 @@ const fileSelected = (e) => { //function will be called when the file is selecte
 }
 function Upload() {
     return (
-        <div>
-            <p>Upload Receipt Body</p>
+        <div className='upload_container'>
+
             {/* <input type="file" onChange={fileSelected} />
             <button>Save</button> */}
 
