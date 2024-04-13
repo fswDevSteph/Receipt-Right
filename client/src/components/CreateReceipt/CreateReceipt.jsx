@@ -1,4 +1,5 @@
-import { useState } from 'react';
+import React, { useRef, useEffect, useState } from 'react';
+
 import { useMutation } from '@apollo/client';
 import { ADD_RECEIPT } from '../../utils/mutations';
 import './CreateReceipt.css';
@@ -65,8 +66,23 @@ function CreateReceipt() {
             setReceiptNotes(value);
         }
     };
-
+    const cloudinaryRef = useRef();
+    const widgetRef = useRef();
+    useEffect(() => {
+        cloudinaryRef.current = window.cloudinary;
+        widgetRef.current = cloudinaryRef.current.createUploadWidget({
+            cloudName: 'dohtfj5zs',
+            uploadPreset: 'fhblvqoq',
+            apiKey: '588842527859546',
+            apiSecret: '-WihU7kL-S4JYThwqLF_aGcWBKw',
+            tags: ['receipt', receiptCategory],
+            environmentVariable: 'CLOUDINARY_URL=cloudinary://588842527859546:-WihU7kL-S4JYThwqLF_aGcWBKw@dohtfj5zs'
+        }, function (error, result) {
+            console.log(result);
+        })
+    }, [receiptCategory]);
     return (
+
         <div>
             <HeaderNav />
             <CloudinaryUploader />
@@ -78,17 +94,17 @@ function CreateReceipt() {
                 </div>
 
                 <form className="create_receipt_form" onSubmit={handleFormSubmit}>
-                    <label>Receipt Name:</label>
-                    <input type="text" id="receiptName" name="receiptName" onChange={handleChange}></input>
-                    <label>Receipt Date:</label>
-                    <input type="date" id="receiptDate" name="receiptDate" onChange={handleChange}></input>
-                    <label>Receipt Amount:</label>
-                    <input type="number" id="receiptAmount" name="receiptAmount" onChange={handleChange}></input>
-                    <label>Receipt Category:</label>
-                    <input type="text" id="receiptCategory" name="receiptCategory" onChange={handleChange}></input>
+
+                    <label><span className="required" >*</span>Receipt Category:</label>
+                    <input type="text" id="receiptCategory" name="receiptCategory" required onChange={handleChange}></input>
                     <label>Receipt Notes:</label>
                     <textarea id="receiptNotes" name="receiptNotes" onChange={handleChange}></textarea>
-                    <input type="submit" value="Submit"></input>
+                    <div>
+                        <h1>Take or Upload Receipt Image</h1>
+                        <button disabled={!receiptCategory} onClick={() => { // diabled={!receiptCategory} ,means the button is disabled if the receiptCategory is empty
+                            widgetRef.current.open(); //
+                        }}>Take or Upload Image</button>
+                    </div>
                 </form>
 
 

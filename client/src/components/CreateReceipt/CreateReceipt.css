@@ -38,3 +38,7 @@ form textarea {
     /* Adjust as needed */
     border-radius: 90px 90px 90px 90px;
 }
+
+.required {
+    color: red;
+}
