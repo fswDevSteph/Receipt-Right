@@ -6,13 +6,53 @@ ul {
     color: #000080;
 }
 
-/* 
-button {
+
+button,
+input[type="submit"] {
     background-color: #E88A4A !important;
     color: white;
+    border-radius: 8px;
+    border: 1px solid white;
+    padding: 0.6em 1.2em;
+    font-size: 1em;
+    font-weight: 500;
+    font-family: inherit;
+    background-color: #f9f9f9;
+    cursor: pointer;
+    transition: border-color 0.25s;
 }
 
-button:hover {
+button:hover,
+input[type="submit"]:hover {
     border-color: black;
     color: white;
-    background-color: #CF6D3A;} */
+    background-color: #CF6D3A;
+}
+
+button:focus,
+button:focus-visible,
+input[type="submit"]:focus,
+input[type="submit"]:focus-visible {
+    outline: 4px auto -webkit-focus-ring-color;
+}
+
+.settings_page_img {
+    margin-bottom: 8em;
+    grid-column: 1;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    width: 80%;
+}
+
+.tug_of_war_image {
+    width: 60%;
+    height: 90%;
+    border-radius: 0 0 90px 90px;
+}
+
+.settings_page_form {
+    margin-bottom: 5em;
+    grid-column: 2;
+    grid-row: 1;
+    width: 80%;
+}
