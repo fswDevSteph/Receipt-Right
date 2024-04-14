@@ -20,6 +20,7 @@ function CloudinaryUploader() {
     return (
         <div>
             <h1>Take or Upload Receipt Image</h1>
+            <h3>(Be sure to complete the <span className='required'>*</span>required fields first!)</h3>
             {/* <button onClick={() => {
                 widgetRef.current.open();
             }}>Take or Upload Image</button> */}

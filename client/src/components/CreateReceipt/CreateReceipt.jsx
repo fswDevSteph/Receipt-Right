@@ -114,6 +114,7 @@ function CreateReceipt() {
                     <textarea id="receiptNotes" name="receiptNotes" onChange={handleChange}></textarea>
                     <div>
                         <h1>Take or Upload Receipt Image</h1>
+
                         <button disabled={!receiptCategory || !receiptEmail} onClick={() => { // diabled={!receiptCategory} ,means the button is disabled if the receiptCategory is empty
                             widgetRef.current.open(); //
                         }}>Take or Upload Image</button>
