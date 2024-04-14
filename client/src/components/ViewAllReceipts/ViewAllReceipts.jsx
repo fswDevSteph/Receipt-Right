@@ -115,32 +115,33 @@ function ViewAllReceipts() {
 
 
 
-            <div style={{ display: "flex" }}>
 
-                {/* <FilterButton style={{ marginLeft: "auto" }} /> */}
-                <div style={{ margin: "auto" }}>
-                    {/* Button to toggle dropdown */}
-                    <button onClick={toggleDropdown} >Filter</button>
-
-                    {/* Dropdown menu */}
-                    {isOpen && (
-                        <div className="dropdown ">
-                            <button onClick={() => handleItemClick('Groceries')}>Groceries</button>
-                            <button onClick={() => handleItemClick('Education')}>Education</button>
-                            <button onClick={() => handleItemClick('Medical')}>Medical</button>
-                            <button onClick={() => handleItemClick('Business')}>Business</button>
-                        </div>
-                    )
-                    }
-                </div >
-            </div>
             <section>
                 <div>
-                    <h2>View ALL Receipts</h2>
+                    <h1 className='view_all_receipts_title'>View ALL Receipts</h1>
+                    <h3 ><span className='required'>(</span>Click the receipt to download<span className='required'>)</span></h3>
+                    <div style={{ display: "flex" }}>
 
+                        {/* <FilterButton style={{ marginLeft: "auto" }} /> */}
+                        <div style={{ margin: "auto" }}>
+                            {/* Button to toggle dropdown */}
+                            <button onClick={toggleDropdown} >Filter</button>
+
+                            {/* Dropdown menu */}
+                            {isOpen && (
+                                <div className="dropdown ">
+                                    <button onClick={() => handleItemClick('Groceries')}>Groceries</button>
+                                    <button onClick={() => handleItemClick('Education')}>Education</button>
+                                    <button onClick={() => handleItemClick('Medical')}>Medical</button>
+                                    <button onClick={() => handleItemClick('Business')}>Business</button>
+                                </div>
+                            )
+                            }
+                        </div >
+                    </div>
                     {images}
 
-                    <h3 className='download_text_red'>Click the receipt to download</h3>
+
                 </div>
             </section >
             {/* {loading ? <h1>Loading...</h1> : <ReceiptsTable receipts={receipts} />} */}

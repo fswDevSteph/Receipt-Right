@@ -2,10 +2,16 @@ p {
     color: #000080;
 }
 
+h3 {
+    margin-top: 0;
+}
 
-.download_text_red {
+.view_all_receipts_title {
+    margin-bottom: 0;
+}
+
+.required {
     color: red;
-
 }
 
 .receipt_img {
