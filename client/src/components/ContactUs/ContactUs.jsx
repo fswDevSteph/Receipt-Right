@@ -1,9 +1,10 @@
 // import { useState } from 'react';
 import './ContactUs.css';
-import HeaderNav from '../HeaderNav/HeaderNav';
-import FooterNav from '../FooterNav/FooterNav';
+import HeaderNav from '../HeaderNav/HeaderNav.jsx';
+import FooterNav from '../FooterNav/FooterNav.jsx';
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+
 function ContactUs() {
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
