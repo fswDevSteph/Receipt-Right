@@ -1,8 +1,28 @@
-.form_container {
+/* .form_container {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: left;
+} */
+
+.contact_form_left {
+    margin-top: 5em;
+    margin-bottom: 8em;
+    grid-column: 1;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+
+.contact_steph_right {
+    margin-bottom: 5em;
+    margin-bottom: 8em;
+    grid-column: 2;
+    grid-row: 1;
+    grid-row-end: 1;
+}
+
+.steph_img {
+    width: 45%;
+    border-radius: 0 0 90px 90px;
 }
 
 form {
