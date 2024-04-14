@@ -2,6 +2,11 @@ h1 {
     color: var(--navy-color);
 }
 
+ul {
+    list-style-type: none;
+    font-size: large;
+
+}
 
 .grid_container {
     display: grid;
@@ -10,7 +15,7 @@ h1 {
 }
 
 .branding_message {
-    align-self: center;
+    /* align-self: center; */
     grid-column: 1;
     grid-row-start: 1;
     grid-row-end: 1;
@@ -19,12 +24,12 @@ h1 {
 .branding_section_image {
     grid-column: 2;
     grid-row: 1;
-    width: 80%;
+    width: 60%;
 }
 
 .happy_friends_image {
-    width: 80%;
-    height: 90%;
+    width: 60%;
+    height: 80%;
     /* Adjust as needed */
     border-radius: 0 0 90px 90px;
 }

@@ -1,6 +1,8 @@
 // import { useState } from 'react';
 import React from 'react';
 import './HomePage.css';
+
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 // import pexels1 from '../assets/images/pexels1.jpg';  friends around table
 // import pexels2 from '../assets/images/pexels2.jpg'; family - chistmasy
 // import pexels3 from '../assets/images/pexels3.jpg'; lady jumping in red sack
@@ -12,7 +14,7 @@ import pexels5 from '../assets/images/pexels5.jpg';
 import HeaderNav from '../HeaderNav/HeaderNav';
 import FooterNav from '../FooterNav/FooterNav';
 
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 
 
 function HomePage() {
@@ -26,24 +28,32 @@ function HomePage() {
                 <div className="branding_message">
                     <h1>Receipt Right,</h1>
                     <h2>
-                        Live a little more, worry a little less.
+                        Save time, not receipts.
                     </h2>
-                    <p>Save your time, not your receipts.</p>
+                    <ul>Receipt Right is here to:
+                        <li>Transform receipt management into a breeze</li>
+                        <li>Seamlessly enhance organizational efficiency</li>
+                        <li>Optimize for larger tax returns without even thinking!</li>
+                        {/* <li>Simplify receipt management</li>
+                        <li>Effortlessly streamline your organization</li>
+                        <li>Maximize potential tax return amounts effortlessly</li> */}
+                    </ul>
                     <Link to="/CreateReceipt">
                         <button className='start_now_btn'>Start Free Now!</button>
                     </Link>
+
+                    <h2>Ditch the distress, ditch the paper mess,live a little more, worry a little less</h2>
                 </div>
 
                 <div className="branding_section_image">
                     <img src={pexels5} alt="Happy Friends" className='happy_friends_image' />
                 </div>
-
-                {/* </section> */}
             </div>
 
-            <div className="addRecSection">
+            {/* <div className="addRecSection">
+                <Route path="/CreateReceipt" component={CreateReceipt} />
 
-            </div>
+            </div> */}
 
 
             <FooterNav />
