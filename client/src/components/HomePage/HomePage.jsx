@@ -44,7 +44,7 @@ function HomePage() {
                         </Link>
                     </div>
 
-                    <h2 className='spacing'>Ditch the distress, ditch the paper mess,live a little more, worry a little less</h2>
+                    <h2 className='spacing'>Ditch the distress, ditch the paper mess, live a little more, and worry a little less</h2>
                 </div>
 
                 <div className="branding_section_image">
