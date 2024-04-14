@@ -13,7 +13,7 @@ function HeaderNav() {
     return (
         <>
             <Navbar expand="lg" className="bg-body-tertiary nav__border">
-                <Container>
+                <Container className='header_nav'>
                     <Navbar.Brand as="div" >
                         <div className='nav__bar__left'>
                             <Link to="/CreateReceipt">

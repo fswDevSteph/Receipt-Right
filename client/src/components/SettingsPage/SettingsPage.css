@@ -6,14 +6,13 @@ ul {
     color: #000080;
 }
 
+/* 
 button {
-    background-color: #E88A4A;
+    background-color: #E88A4A !important;
     color: white;
 }
 
 button:hover {
     border-color: black;
     color: white;
-    background-color: #CF6D3A;
-
-}
+    background-color: #CF6D3A;} */

@@ -22,7 +22,7 @@ function ContactUs() {
             <div className="grid_container">
                 <div className="contact_form_left">
                     <h1>Contact</h1>
-                    <h2>Send a Message</h2>
+                    <h2>Send a Message!</h2>
                     <div className="form_container ">
                         <form onSubmit={handleSubmit}>
                             <label>Name</label>

@@ -13,7 +13,7 @@
 }
 
 .contact_steph_right {
-    margin-bottom: 5em;
+    margin-top: 5em;
     margin-bottom: 8em;
     grid-column: 2;
     grid-row: 1;
@@ -23,6 +23,7 @@
 .steph_img {
     width: 45%;
     border-radius: 0 0 90px 90px;
+
 }
 
 form {
@@ -39,31 +40,4 @@ form {
     width: 80%;
 
     max-width: 500px;
-}
-
-form input[type="submit"] {
-    /* margin-left: auto; */
-    padding: 5px 10px;
-    background-color: white;
-    color: #040080;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-form input[type="submit"]:hover {
-    background-color: #7179B6;
-    color: white;
-
-}
-
-form input[type="submit"] {
-    align-self: center;
-    /* Centers button in the flex container */
-    padding: 5px 10px;
-    background-color: white;
-    color: #040080;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
 }

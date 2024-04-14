@@ -34,8 +34,7 @@ ul {
 }
 
 .branding_section_image {
-    /* margin-top: 8em; */
-    /* align-items: center; */
+
     margin-bottom: 5em;
     grid-column: 2;
     grid-row: 1;
@@ -56,24 +55,6 @@ ul {
 
 .block_white {
     background-color: white;
-    color: black;
-    display: grid;
-}
-
-.block_black {
-    background-color: black;
-    color: white;
-    display: grid;
-}
-
-.block_beige {
-    background-color: beige;
-    color: black;
-    display: grid;
-}
-
-.block_lightblue {
-    background-color: lightblue;
     color: black;
     display: grid;
 }
