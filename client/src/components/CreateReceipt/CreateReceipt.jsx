@@ -6,8 +6,7 @@ import './CreateReceipt.css';
 import HeaderNav from '../HeaderNav/HeaderNav';
 import FooterNav from '../FooterNav/FooterNav';
 // import Camera from '../Camera/Camera';
-import Upload from '../Upload/Upload';
-import addIcon from '../assets/icons/addIcon2.png';
+
 import pexels7 from '../assets/images/pexels7.jpg';  /*friends around table*/
 // import cameraIcon from '../assets/icons/cameraIcon.png';
 import { Link } from 'react-router-dom';

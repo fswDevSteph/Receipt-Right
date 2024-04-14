@@ -62,8 +62,7 @@ function App() {
           <Route path="/ContactUs" element={<ContactUs />} />
           <Route path="/Export" element={<Export />} />
           <Route path="/SettingsPage" element={<SettingsPage />} />
-          {/* <Route path="/RegistrationPage" element={<RegistrationPage />} /> */}
-          <Route path="ContactUs" element={<ContactUs />} />
+
           <Route path="/LoginPage" element={<LoginPage />} />
 
         </Routes>

@@ -24,7 +24,7 @@ function FooterNav() {
                         </div>
 
                         <div className='nav__bar__right'>
-                            <Link to="/ContactUs">
+                            <Link to="/SettingsPage">
                                 <img src={settingsIcon} alt="add image icon" width="30" height="24" />
                                 <p className='small_font'>Settings</p>
                             </Link>

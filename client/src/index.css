@@ -14,13 +14,11 @@
 
 a {
   font-weight: 500;
-  color: #646cff;
+
   text-decoration: inherit;
 }
 
-a:hover {
-  color: #747bff;
-}
+
 
 body {
   margin: 0;
@@ -37,6 +35,9 @@ h1 {
 }
 
 button {
+  background-color: #E88A4A;
+  color: white;
+
   border-radius: 8px;
   border: 1px solid;
   padding: 0.6em 1.2em;

@@ -24,7 +24,7 @@ function HeaderNav() {
                         <div className='nav__bar__right'>
                             <Link to="/Export">
                                 <img className='' src={exportIcon} alt="export image icon" width="30" height="24" />
-                                <p className='small_font'>Download Receipt</p>
+                                <p className='small_font'>Manage Receipt</p>
                             </Link>
                         </div>
                         <div >

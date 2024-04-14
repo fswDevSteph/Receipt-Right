@@ -5,7 +5,7 @@ import FooterNav from '../FooterNav/FooterNav';
 import { Link } from 'react-router-dom';
 
 
-function Settings() {
+function SettingsPage() {
     const handleEmailChange = (event) => {
         event.preventDefault();
         // Handle email change
@@ -24,7 +24,7 @@ function Settings() {
     return (
         <>
             <HeaderNav />
-            <h2>ContactUs/now settings Page</h2>
+            <h2>Settings Page</h2>
             <div className='form_container'>
                 <form onSubmit={handleEmailChange}>
                     <label>
@@ -49,4 +49,4 @@ function Settings() {
     );
 }
 
-export default Settings;
+export default SettingsPage;

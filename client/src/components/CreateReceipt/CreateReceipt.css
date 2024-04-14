@@ -42,3 +42,14 @@ form textarea {
 .required {
     color: red;
 }
+
+button {
+    background-color: #E88A4A;
+    color: white;
+}
+
+button:hover {
+    border-color: black;
+    color: white;
+    background-color: #CF6D3A;
+}

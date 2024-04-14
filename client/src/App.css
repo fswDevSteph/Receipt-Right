@@ -7,3 +7,14 @@
   --green-color: #36A900;
   --orange-color: #E88A4A;
 }
+
+button {
+  background-color: #E88A4A;
+  color: white;
+}
+
+button:hover {
+  border-color: black;
+  color: white;
+  background-color: #CF6D3A;
+}
