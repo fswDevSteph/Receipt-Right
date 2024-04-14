@@ -26,23 +26,25 @@ function HomePage() {
             <div className="grid_container">
                 {/* <section> */}
                 <div className="branding_message">
-                    <h1>Receipt Right,</h1>
+                    <h1>Receipt Right</h1>
                     <h2>
                         Save time, not receipts.
                     </h2>
-                    <ul>Receipt Right is here to:
-                        <li>Transform receipt management into a breeze</li>
-                        <li>Seamlessly enhance organizational efficiency</li>
-                        <li>Optimize for larger tax returns without even thinking!</li>
+                    <ul className='spacing'><u className='orange'>Receipt Right is here to:</u>
+                        <li><span className='required'>*</span>Transform receipt management into a breeze</li>
+                        <li><span className='required'>*</span>Seamlessly enhance organizational efficiency</li>
+                        <li><span className='required'>*</span>Optimize for larger tax returns without even thinking!</li>
                         {/* <li>Simplify receipt management</li>
                         <li>Effortlessly streamline your organization</li>
                         <li>Maximize potential tax return amounts effortlessly</li> */}
                     </ul>
-                    <Link to="/CreateReceipt">
-                        <button className='start_now_btn'>Start Free Now!</button>
-                    </Link>
+                    <div className="spacing">
+                        <Link to="/CreateReceipt">
+                            <button className='start_now_btn '>Start Free Now!</button>
+                        </Link>
+                    </div>
 
-                    <h2>Ditch the distress, ditch the paper mess,live a little more, worry a little less</h2>
+                    <h2 className='spacing'>Ditch the distress, ditch the paper mess,live a little more, worry a little less</h2>
                 </div>
 
                 <div className="branding_section_image">

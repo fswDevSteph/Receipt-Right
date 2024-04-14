@@ -4,8 +4,18 @@ h1 {
 
 ul {
     list-style-type: none;
-    font-size: large;
+    font-size: 1.5rem;
+    font-weight: 500;
 
+}
+
+.orange {
+    text-decoration: underline;
+    text-decoration-color: #CF6D3A;
+}
+
+.required {
+    color: red;
 }
 
 .grid_container {
@@ -16,7 +26,7 @@ ul {
 
 .branding_message {
     /* align-self: center; */
-    margin-top: 8em;
+    margin-top: 5em;
     margin-bottom: 8em;
     grid-column: 1;
     grid-row-start: 1;
@@ -26,7 +36,7 @@ ul {
 .branding_section_image {
     /* margin-top: 8em; */
     /* align-items: center; */
-    margin-bottom: 8em;
+    margin-bottom: 5em;
     grid-column: 2;
     grid-row: 1;
     width: 80%;
@@ -37,6 +47,11 @@ ul {
     height: 80%;
     /* Adjust as needed */
     border-radius: 0 0 90px 90px;
+}
+
+.spacing {
+    margin-top: 3em;
+    margin-bottom: 3em;
 }
 
 .block_white {
