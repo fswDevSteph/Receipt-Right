@@ -1,9 +1,10 @@
 # Receipt-Right
+## Image
 ![screenshot](https://github.com/fswDevSteph/Receipt-Right/assets/142741708/ec37e4b6-a760-43f6-92d4-db8efcec25be)
 
 
 ## Deployed
-https://receipt-right.onrender.com/CreateReceipt 
+https://receipt-right.onrender.com
 
 ## Contents
 - [Description](#description)
