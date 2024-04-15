@@ -36,10 +36,10 @@ function CreateReceipt() {
                 },
             });
 
-            setReceiptEmail('');
+            setReceiptEmail(document.querySelector('#receiptEmail')?.value || '');
             setReceiptDate('');
             setReceiptAmount('');
-            setReceiptCategory('');
+            setReceiptCategory(document.querySelector('#receiptEmail')?.value || '');
             setReceiptNotes('');
         } catch (err) {
             console.error(err);
