@@ -130,6 +130,7 @@ function ViewAllReceipts() {
                             {/* Dropdown menu */}
                             {isOpen && (
                                 <div className="dropdown ">
+                                    <button onClick={() => window.location.reload()}>View All Receipts</button>
                                     <button onClick={() => handleItemClick('Groceries')}>Groceries</button>
                                     <button onClick={() => handleItemClick('Education')}>Education</button>
                                     <button onClick={() => handleItemClick('Medical')}>Medical</button>
