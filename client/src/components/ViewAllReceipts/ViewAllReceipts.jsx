@@ -85,6 +85,7 @@ function ViewAllReceipts() {
         console.log(`${choice}`);
         setTag(`${choice}`);
         setIsOpen(false); // Close the dropdown after selecting a choice
+        document.querySelector('.view_all_receipts_title').textContent = `${choice} Receipts`; // Change the title to the selected choice "____ receipts"
     };
     // function getImagesByTag() {
     // setTag('Groceries');
@@ -118,7 +119,7 @@ function ViewAllReceipts() {
 
             <section>
                 <div>
-                    <h1 className='view_all_receipts_title'>View ALL Receipts</h1>
+                    <h1 className='view_all_receipts_title'>All Receipts</h1>
                     <h3 ><span className='required'>(</span>Click the receipt to download<span className='required'>)</span></h3>
                     <div style={{ display: "flex" }}>
 
@@ -127,7 +128,7 @@ function ViewAllReceipts() {
                             {/* Button to toggle dropdown */}
                             <button onClick={toggleDropdown} >Filter</button>
 
-                            {/* Dropdown menu */}
+                            {/* Dropdown menu for filter button */}
                             {isOpen && (
                                 <div className="dropdown ">
                                     <button onClick={() => window.location.reload()}>View All Receipts</button>
