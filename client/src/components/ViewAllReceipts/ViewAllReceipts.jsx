@@ -87,6 +87,20 @@ function ViewAllReceipts() {
         setIsOpen(false); // Close the dropdown after selecting a choice
         document.querySelector('.view_all_receipts_title').textContent = `${choice} Receipts`; // Change the title to the selected choice "____ receipts"
     };
+
+    const handleDeleteImage = (publicId) => {
+        axios.delete(`http://localhost:3001/api/images/${publicId}`)
+            .then(response => {
+                // Handle the response from the server
+                console.log(response);
+                window.location.reload();
+            })
+            .catch(error => {
+                // Handle the error
+                console.log(error);
+            });
+    };
+
     // function getImagesByTag() {
     // setTag('Groceries');
     useEffect(() => {
@@ -99,7 +113,7 @@ function ViewAllReceipts() {
                 const imageElements = response.data
                     .map(resource => ([
                         <img onClick={exportPhoto} className="receipt_img" height="400em" width="200em" src={resource.secure_url} alt={resource.public_id} key={resource.public_id} />,
-                        // <button className="export_button" onClick={exportPhoto} id={resource.public_id}>Export</button>
+                        <button className="export_button" onClick={() => handleDeleteImage(resource.public_id)} id={resource.public_id}>Delete</button>
                     ]
                     ));
                 setImages(imageElements);
