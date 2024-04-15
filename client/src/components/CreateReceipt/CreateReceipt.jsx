@@ -81,7 +81,13 @@ function CreateReceipt() {
             ],
             environmentVariable: 'CLOUDINARY_URL=cloudinary://588842527859546:-WihU7kL-S4JYThwqLF_aGcWBKw@dohtfj5zs'
         }, function (error, result) {
-            console.log(result);
+            if (error) {
+                // The upload failed, you can show an error message
+                alert('Failed to upload image: ' + error.message);
+            } else if (result.event === 'success') {
+                // The upload was successful, you can show a success message
+                alert('Image uploaded successfully');
+            };
         })
     }, [receiptCategory, receiptEmail]);
     return (
