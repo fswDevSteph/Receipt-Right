@@ -2,7 +2,7 @@
 import './SettingsPage.css';
 import HeaderNav from '../HeaderNav/HeaderNav';
 import FooterNav from '../FooterNav/FooterNav';
-import pexels6 from '../assets/images/pexels6.jpg';
+import pexels10 from '../assets/images/pexels10.jpg';
 import { Link } from 'react-router-dom';
 
 
@@ -27,7 +27,7 @@ function SettingsPage() {
             <HeaderNav />
             <div className="grid_container">
                 <div className="settings_page_img">
-                    <img src={pexels6} alt="Couple playing tug of war" className='tug_of_war_image' />
+                    <img src={pexels10} alt="Woman in wheel chair at her computer smiling" className='women_smiling_at_computer' />
                 </div>
                 <div className="settings_page_form">
                     <h2>Settings Page</h2>
