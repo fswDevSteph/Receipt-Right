@@ -1,9 +1,12 @@
 # Receipt-Right
+
 ## Image
 ![screenshot](https://github.com/fswDevSteph/Receipt-Right/assets/142741708/ec37e4b6-a760-43f6-92d4-db8efcec25be)
 
+## Video Walk Through
+https://www.youtube.com/watch?v=4sQQCodlSNg 
 
-## Deployed
+## Deployed Application
 https://receipt-right.onrender.com
 
 ## Contents
