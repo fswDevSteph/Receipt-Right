@@ -6,7 +6,7 @@ import FilterButton from '../FilterButton/FilterButton.jsx'; // Import the Filte
 import './ViewAllReceipts.css';
 import axios from 'axios';
 import { Cloudinary } from 'cloudinary-core';
-// import { set } from 'mongoose';
+
 
 
 function ViewAllReceipts() {
@@ -52,27 +52,7 @@ function ViewAllReceipts() {
                 document.body.removeChild(link);
             });
     };
-    // function getImages() {
-    //     useEffect(() => {
-    //         axios.get(`http://localhost:3001/api/images`)
-    //             .then(response => {
-    //                 // url = response.public_id
-    //                 console.log(response);
-    //                 console.log(response.data);
-    //                 const imageElements = response.data
-    //                     .map(resource => ([
-    //                         <img onClick={exportPhoto} className="receipt_img" height="400em" width="200em" src={resource.secure_url} alt={resource.public_id} key={resource.public_id} />,
-    //                         // <button className="export_button" onClick={exportPhoto} id={resource.public_id}>Export</button>
-    //                     ]
-    //                     ));
-    //                 setImages(imageElements);
-    //             })
-    //             .catch(error => {
-    //                 console.log('Error fetching images', error);
-    //             });
-    //     }, []);
-    // }
-    // getImages();
+
     const [isOpen, setIsOpen] = useState(false); // State to manage dropdown visibility
 
     // Function to toggle dropdown visibility
@@ -101,8 +81,7 @@ function ViewAllReceipts() {
             });
     };
 
-    // function getImagesByTag() {
-    // setTag('Groceries');
+
     useEffect(() => {
         console.log(tag)
         axios.get(`http://localhost:3001/api/images/${tag}`)
@@ -122,8 +101,7 @@ function ViewAllReceipts() {
                 console.log('Error fetching images', error);
             });
     }, [tag]);
-    // }
-    // getImagesByTag('Groceries');
+
 
     return (
         <div>
@@ -160,7 +138,7 @@ function ViewAllReceipts() {
 
                 </div>
             </section >
-            {/* {loading ? <h1>Loading...</h1> : <ReceiptsTable receipts={receipts} />} */}
+
 
         </div >
     );

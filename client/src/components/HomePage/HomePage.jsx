@@ -24,7 +24,7 @@ function HomePage() {
         <div>
             <HeaderNav />
             <div className="grid_container">
-                {/* <section> */}
+
                 <div className="branding_message">
                     <h1>Receipt Right</h1>
                     <h2>
@@ -34,9 +34,7 @@ function HomePage() {
                         <li><span className='required'>*</span>Transform receipt management into a breeze</li>
                         <li><span className='required'>*</span>Seamlessly enhance organizational efficiency</li>
                         <li><span className='required'>*</span>Optimize for larger tax returns without even thinking!</li>
-                        {/* <li>Simplify receipt management</li>
-                        <li>Effortlessly streamline your organization</li>
-                        <li>Maximize potential tax return amounts effortlessly</li> */}
+
                     </ul>
                     <div className="spacing">
                         <Link to="/CreateReceipt">
@@ -51,12 +49,6 @@ function HomePage() {
                     <img src={pexels5} alt="Happy Friends" className='happy_friends_image' />
                 </div>
             </div>
-
-            {/* <div className="addRecSection">
-                <Route path="/CreateReceipt" component={CreateReceipt} />
-
-            </div> */}
-
 
             <FooterNav />
         </div>

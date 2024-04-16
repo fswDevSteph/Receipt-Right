@@ -1,10 +1,5 @@
 import React, { useRef, useEffect, useState } from 'react';
-// import { v2 as cloudinary } from 'cloudinary';
-// cloudinary.config({
-//     cloud_name: 'dohtfj5zs',
-//     api_key: '588842527859546',
-//     api_secret: '-WihU7kL-S4JYThwqLF_aGcWBKw'
-// });
+
 
 function Camera() {
     // Create a reference to the video element and (null) is the initial value which means the video element is not yet created

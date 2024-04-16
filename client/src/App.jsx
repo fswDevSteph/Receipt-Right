@@ -1,13 +1,7 @@
 import { useState } from 'react'
-// import HeaderNav from './components/HeaderNav/HeaderNav.jsx';
-// import ContactUs from './components/ContactUs/ContactUs.jsx';
-// import FooterNav from './components/FooterNav/FooterNav.jsx';
-// import ViewAllReceipts from './components/ViewAllReceipts/ViewAllReceipts.jsx';
 import Export from './components/ExportReceipts/Export.jsx';
-// import Dashboard from './components/Dashboard/Dashboard.jsx';
 import HomePage from './components/HomePage/HomePage.jsx';
 import LoginPage from './components/LoginPage/LoginPage.jsx';
-// import LogoutPage from './components/LogoutPage/LogoutPage.jsx';
 import SettingsPage from './components/SettingsPage/SettingsPage.jsx';
 import RegistrationPage from './components/RegistrationPage/RegistrationPage.jsx';
 import CreateReceipt from './components/CreateReceipt/CreateReceipt.jsx';
@@ -24,7 +18,7 @@ import { setContext } from '@apollo/client/link/context';
 import { Outlet } from 'react-router-dom';
 import './App.css'
 import ContactUs from './components/ContactUs/ContactUs.jsx';
-//import RegistrationPage from './components/RegistrationPage/RegistrationPage.jsx';
+
 
 
 // Construct our main GraphQL API endpoint
@@ -66,28 +60,6 @@ function App() {
           <Route path="/LoginPage" element={<LoginPage />} />
 
         </Routes>
-
-
-
-
-
-
-
-        {/* //     <HeaderNav />
-    //     <LoginPage />
-    //     <HomePage />
-    //     <Dashboard />
-    //     <SettingsPage />
-
-    //     <CreateReceipt />
-    //     <ViewAllReceipts />
-    //     <SettingsPage />
-    //     <ContactUs />
-    //     <LogoutPage />
-    //     <FooterNav /> */}
-
-
-
 
       </Router>
     </ApolloProvider>

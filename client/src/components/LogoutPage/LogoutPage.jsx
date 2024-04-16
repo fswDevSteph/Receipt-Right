@@ -11,8 +11,7 @@ function LogoutPage() {
         <div>
             <HeaderNav />
 
-            {/* Code here */}
-            liLogoutPage Body</p>
+
 
             <FooterNav />
         </div >

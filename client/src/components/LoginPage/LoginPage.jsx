@@ -44,7 +44,6 @@ function LoginPage() {
             console.error(e);
         }
 
-        // clear form values
     };
 
     return (

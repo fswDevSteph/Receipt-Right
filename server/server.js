@@ -10,7 +10,7 @@ const PORT = process.env.PORT || 3001;
 const app = express();
 const cloudinary = require('cloudinary').v2;
 const cors = require('cors');
-//
+
 app.use(cors());
 cloudinary.config({
   cloud_name: 'dohtfj5zs',
@@ -67,7 +67,6 @@ const startApolloServer = async () => {
   app.use(express.urlencoded({ extended: true }));
   app.use(express.json());
 
-  //app.use('/graphql', expressMiddleware(server));
 
   // if we're in production, serve client/dist as static assets
   if (process.env.NODE_ENV === 'production') {

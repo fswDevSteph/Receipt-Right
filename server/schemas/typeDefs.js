@@ -43,5 +43,5 @@ const typeDefs = `
     removeReceipt(receiptId: ID!): Receipt
   }
 `;
-//type mutation 
+
 module.exports = typeDefs;
